@@ -9,7 +9,6 @@ import com.teeboco.demo.service.commons.S3Service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
@@ -29,7 +28,6 @@ public class UserService {
     private final UserRepository userRepository;
     private final S3Service s3Service;
 
-    @Transactional
     public void signUp(SignUpRequestDTO signUpRequestDTO, MultipartFile mFile) throws BaseException {
 
         //닉네임 중복체크
