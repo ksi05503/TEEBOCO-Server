@@ -8,7 +8,7 @@
      - Repositary에서는 명시된 exception만을 throw한다. (그 외의 unexpected error는 service에서 처리한다.)
      - 에러로깅은 발생지점을 명확히 하기위해 한 프로세스에 한번 찍어준다.
      - NPE 발생 가능 지점은 무조건 boxing 하기
-     - Service 코드에서 분리된 필요한 도구함수(?)들은 아래에 private 으로 작성
+     - Service 코드에서 분리된 필요한 도구함수들은 아래에 private 으로 작성
      - 테스트 친화적으로 코드 작성 (검증 가능한 코드)
      - TDD 에 따른다.
      - mockito 를 이용하여 SpringBootTest 가 아닌, 스프링에 독립된 테스트 코드 작성
